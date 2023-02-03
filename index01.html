@@ -1,1 +1,24 @@
+<html>
+  <head>
+    <style>
+      #text {
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="text">こんにちは！</p>
+
+    <script>
+      const text = document.querySelector("#text");
+      let bottom = 0;
+
+      setInterval(() => {
+        bottom++;
+        text.style.bottom = `${bottom}px`;
+      }, 50);
+    </script>
+  </body>
+</html>
 
